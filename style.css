@@ -1,0 +1,172 @@
+/* Osnovni stilovi */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to top, #7a439e, #01073a);
+    text-align: center;
+}
+
+/* Header sa pozadinskom slikom */
+header {
+    position: relative;
+    background: url("slikahtml4.jpg") no-repeat center center/cover;
+    padding: 60px 20px;
+    text-align: center;
+    border-bottom: 3px solid #ffffff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    color: white;
+    z-index: 1;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,50,0.6);
+    z-index: -1;
+}
+
+header h1 {
+    font-size: 50px;
+    margin: 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+
+header p {
+    font-size: 20px;
+    margin-top: 15px;
+    font-style: italic;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}
+
+/* Navigacija u headeru */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Gornji red sa slikama */
+.top-row {
+    display: flex;
+    justify-content: center;
+    gap: 70px; /* veći razmak između slika */
+    max-width: 1700px;
+    margin: 40px auto;
+}
+
+.top-row .box {
+    flex: 1;
+    padding: 10px;
+}
+
+.top-row .box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+
+.top-row .box img:hover {
+    transform: scale(1.05);
+}
+
+/* Tekst ispod slika */
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+.container .box {
+    background: linear-gradient(to top, #4f6bce, #01073a);
+    color: white;
+    font-size: 20px;
+    line-height: 1.6;
+    
+    border-radius: 20px;
+    padding: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.container .box:hover {
+    transform: scale(1.03);
+}
+
+/* Kontakt forma */
+.form-container {
+    width: 50%;
+    margin: 30px auto;
+    padding: 20px;
+    background: linear-gradient(to top, #7a439e, #01073a);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: left;
+    color: #ffffff;
+    
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: darkblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: blue;
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    body { font-size: 16px; }
+    .form-container { width: 90%; }
+    .top-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

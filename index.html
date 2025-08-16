@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <title>Moja moderna stranica</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header sa pozadinskom slikom i navigacijom -->
+    <header>
+        <div class="overlay"></div> <!-- Tamni sloj preko slike -->
+        <h1>Svet oko nas</h1>
+        <p><b>Učestvuj sa prijateljima u zanimljivoj temi</b></p>
+        <!-- Navigacija -->
+        <nav>
+            <ul>
+                <li><a href="#">Početna</a></li>
+                <li><a href="#">Debata</a></li>
+                <li><a href="#">Galerija</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Gornji red sa slikama -->
+        <div class="top-row">
+            <div class="box"><img src="slika_html2.jpg" alt="Slika 1"></div>
+            <div class="box"><img src="slika_html3.jpg" alt="Slika 2"></div>
+            <div class="box"><img src="slika_html.jpg" alt="Slika 3"></div>
+        </div>
+
+        <!-- Tekst ispod slika -->
+        <div class="container">
+            <div class="box">
+                "Obaveštavamo sve učesnike debate o svemiru i planetama da će 
+                događaj početi u 18:00 časova u glavnoj sali. Pripremite svoje prezentacije
+                i budite spremni za zanimljive diskusije o našim planetama i mogućnostima života u svemiru."
+            </div>
+        </div>
+
+        <!-- Kontakt forma -->
+        <div class="form-container">
+            <h2>Kontakt forma</h2>
+            <form action="#" method="post">
+                <label for="ime">Ime:</label>
+                <input type="text" id="ime" name="ime" placeholder="Unesi ime" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Unesi email" required>
+
+                <label for="poruka">Poruka:</label>
+                <textarea id="poruka" name="poruka" rows="4" placeholder="Tvoja poruka" required></textarea>
+
+                <button type="submit">Pošalji</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
